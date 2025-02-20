@@ -1,10 +1,12 @@
+import logo from "../assets/logo.png"; // Import the logo
+
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-left">
           <a href="/" className="logo-link">
-            <div className="logo" />
+            <img src={logo} alt="SolarVortex Logo" className="logo" /> 
             <span className="logo-text">SolarVortex</span>
           </a>
         </div>

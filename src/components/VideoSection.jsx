@@ -1,31 +1,35 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
+import heatmapVideo from "../assets/Heatmap.mp4"
+import bipvVideo from "../assets/BIPV.mp4"
+import solarRoofVideo from "../assets/2023-10-2921-57-25-ezgif.com-video-speed.mp4"
+import photorealistic3DVideo from "../assets/2023-10-2922-21-37-ezgif.com-video-speed.mp4"
 
 function VideoSection() {
   const videos = [
     {
       id: 1,
       title: "Heatmap Visualization of Ahmedabad City",
-      url: "/Heatmap.mp4",
+      url: heatmapVideo,
       type: "mp4",
     },
     {
       id: 2,
       title: "Calculating the BIPV Potential of a Building",
-      url: "/BIPV.mp4",
+      url: bipvVideo,
       type: "mp4",
     },
     {
       id: 3,
       title: "Visualizing the Solar Panels on the roof of a Building",
-      url: "/2023-10-2921-57-25-ezgif.com-video-speed.mp4",
+      url: solarRoofVideo,
       type: "mp4",
     },
     {
       id: 4,
       title: "Visualizing the Solar Panels on the roof of a Building Using Photorealistic 3-D Tiles",
-      url: "/2023-10-2922-21-37-ezgif.com-video-speed.mp4",
+      url: photorealistic3DVideo,
       type: "mp4",
     },
   ]
@@ -34,7 +38,6 @@ function VideoSection() {
   const videoRef = useRef(null)
 
   useEffect(() => {
-    // Restart video when activeVideo changes
     if (videoRef.current) {
       videoRef.current.load()
       videoRef.current.play()
@@ -49,14 +52,7 @@ function VideoSection() {
         <div className="video-content">
           <div className="video-player">
             {videos[activeVideo].type === "mp4" ? (
-              <video
-                ref={videoRef}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="video-element"
-              >
+              <video ref={videoRef} autoPlay loop muted playsInline className="video-element">
                 <source src={videos[activeVideo].url} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -79,7 +75,6 @@ function VideoSection() {
                 onClick={() => setActiveVideo(index)}
               >
                 <h3 className="video-item-title">{video.title}</h3>
-                <p className="video-item-description">{video.description}</p>
               </div>
             ))}
           </div>

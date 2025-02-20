@@ -13,10 +13,10 @@ function AboutUs() {
               {/* <img src="/profile1.jpg" alt="Developer 1" className="team-photo" /> */}
               <h3 className="team-name">Atharva Garole</h3>
               <div className="social-links">
-                <a href="https://github.com/johndoe" target="_blank" className="social-link">
+                <a href="https://github.com/GaroleAtharva" target="_blank" className="social-link">
                   <i className="fab fa-github"></i> GitHub
                 </a>
-                <a href="https://linkedin.com/in/johndoe" target="_blank" className="social-link">
+                <a href="https://www.linkedin.com/in/atharvagarole/" target="_blank" className="social-link">
                   <i className="fab fa-linkedin"></i> LinkedIn
                 </a>
               </div>
@@ -26,10 +26,10 @@ function AboutUs() {
               {/* <img src="/profile2.jpg" alt="Developer 2" className="team-photo" /> */}
               <h3 className="team-name">Sagar Singh</h3>
               <div className="social-links">
-                <a href="https://github.com/janesmith" target="_blank" className="social-link">
+                <a href="https://github.com/Sagar9955" target="_blank" className="social-link">
                   <i className="fab fa-github"></i> GitHub
                 </a>
-                <a href="https://linkedin.com/in/janesmith" target="_blank" className="social-link">
+                <a href="https://www.linkedin.com/in/sagarasingh/" target="_blank" className="social-link">
                   <i className="fab fa-linkedin"></i> LinkedIn
                 </a>
               </div>
@@ -40,10 +40,10 @@ function AboutUs() {
               {/* <img src="/profile2.jpg" alt="Developer 2" className="team-photo" /> */}
               <h3 className="team-name">Prathmesh Badgujar</h3>
               <div className="social-links">
-                <a href="https://github.com/janesmith" target="_blank" className="social-link">
+                <a href="https://github.com/pbword" target="_blank" className="social-link">
                   <i className="fab fa-github"></i> GitHub
                 </a>
-                <a href="https://linkedin.com/in/janesmith" target="_blank" className="social-link">
+                <a href="https://www.linkedin.com/in/prathameshbadgu/" target="_blank" className="social-link">
                   <i className="fab fa-linkedin"></i> LinkedIn
                 </a>
               </div>

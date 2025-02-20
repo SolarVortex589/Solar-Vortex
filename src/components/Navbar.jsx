@@ -10,11 +10,11 @@ function Navbar() {
             <span className="logo-text">SolarVortex</span>
           </a>
         </div>
-        <div className="navbar-right">
+        {/* <div className="navbar-right">
           <a href="/blog" className="nav-button">
             Blog
           </a>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
